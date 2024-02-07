@@ -1,0 +1,11 @@
+Dummy database Creation:
+1. make migration
+Migration: php artisan make:migration migration_name
+2. Edit migration file from database->migrations->create_book_table
+3. make table: php artisan migrate
+
+Now create dummy data:
+1. Make factory : php artisan make:factory BookFactory
+2. Modify BookFactory definition function
+3. Add BookFactory to database seeder
+4. php artisan db:seed
