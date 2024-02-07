@@ -1,3 +1,21 @@
+Create project:
+github theke namale:
+1. env file na thakle env.example copy kore env rename korte hobe
+2. vendor na thakle install composer : composer install 
+3.If key is missing: php artisan key:generate
+From beginning:
+1. composer create-project laravel/laravel name
+2. run server: php artisan serve
+3. set database name from env
+
+Working:
+1. make controller: php artisan make:controller BookController
+2. make model: php artisan make:model Book (database hobe prural : Books, model singular: Book primary key: id)
+3. create layout in view : layout.blade.php
+4. implement bootstrap 4
+5. for pagination add {{$books->links()}} to index view
+6. add Paginator::useBootstrapFour() to app/providers/appserviceprovider files boot function
+
 Dummy database Creation:
 1. make migration
 Migration: php artisan make:migration migration_name
